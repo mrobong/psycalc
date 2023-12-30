@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>psycalc</title>
+</head>
+<body>
+        <form name="calcul">
+        <table>
+        
+            <tr>
+                <td colspan="4"> <input type="text" name="result" placeholder="0" style="text-align:right" disabled> </td>
+            
+            </tr>
+          <div class="merge">
+            
+            <tr>
+            <td><button type="button" value="C" onclick="remove()" class="func"> C </button> </td>
+            <td><button type="button" value="BACKSPC" onclick="BACKSPC()" class="func"> &#9003; </button> </td>
+            <td><button type="button" value="%" onclick="number(value)" class="opera"> % </button> </td>
+                <td><button type="button" value="x^2" onclick="square()" class="opera"> x<sup>2 </button> </td>
+            </tr>
+            <tr>
+            <td><button type="button" value="factorial" onclick="factorial()" class="opera"> x! </button> </td>
+            <td><button type="button" value="**" onclick="number(value)" class="opera" > x^y </button> </td>
+              <td><button type="button" value="(" onclick="number(value)" class="opera"> ( </button> </td>
+            <td><button type="button" value=")" onclick="number(value)" class="opera" > ) </button> </td>
+              </tr>
+            
+            <tr>
+            <td><button type="button" value="sin" onclick="sin()" class="opera"> sin(x) </button> </td>
+            <td><button type="button" value="cos" onclick="cos()" class="opera"> cos(x) </button> </td>
+            <td><button type="button" value="tan" onclick="tan()" class="opera"> tan(x) </button> </td>
+                <td><button type="button" value="log" onclick="log()" class="opera"> log(x)<sub>10 </button> </td>
+            </tr>
+        
+            <tr>
+                <td><button type="button" value="x^3" onclick="cubed()" class="opera"> x<sup>3 </button> </td>
+                <td><button type="button" value="sqrt2" onclick="sqrt2()" class="opera"> &radic; </button> </td>
+            <td><button type="button" value="sqrt3" onclick="sqrt3()" class="opera"> &#8731; </button> </td>
+                <td><button type="button" value="/" onclick="number(value)" class="opera"> / </button> </td>
+                
+                
+            </tr>
+        
+            <tr>
+                <td><button type="button" value="7" onclick="number(value)" class="number"> 7 </button> </td>
+                <td><button type="button" value="8" onclick="number(value)" class="number"> 8 </button> </td>
+                <td><button type="button" value="9" onclick="number(value)" class="number"> 9 </button> </td>
+            <td><button type="button" value="*" onclick="number(value)" class="opera"> * </button> </td>
+            
+          <tr>
+                <td><button type="button" value="4" onclick="number(value)" class="number"> 4</button> </td>
+                <td><button type="button" value="5" onclick="number(value)" class="number"> 5 </button> </td>
+                <td><button type="button" value="6" onclick="number(value)" class="number"> 6 </button> </td>
+                <td><button type="button" value="-" onclick="number(value)" class="opera"> - </button> </td>
+            </tr>
+        
+            <tr>
+            <td><button type="button" value="1" onclick="number(value)" class="number"> 1 </button> </td>
+                <td><button type="button" value="2" onclick="number(value)" class="number"> 2 </button> </td>
+                <td><button type="button" value="3" onclick="number(value)" class="number"> 3 </button> </td>
+            <td><button type="button" value="+" onclick="number(value)" class="opera" > + </button> </td>
+            </tr>
+        
+            <tr>
+                <td><button type="button" value="." onclick="number(value)" class="number"> . </button> </td>
+                <td><button type="button" value="0" onclick="number(value)" class="number"> 0 </button> </td>
+            <td colspan="2"> <button type="button" value="=" onclick="equal()" class="equal">=</button> </td>
+            
+                
+                
+            </tr>
+            </div>
+        
+        </table>
+        </form>
+        
+</body>
+<script src="index.js"></script>
+</html>
